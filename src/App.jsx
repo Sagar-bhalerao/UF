@@ -26,8 +26,9 @@ import Ledger from './componentes/Reports/Ledger/Ledger';
 import Profile from './componentes/Auth/Profile';
 function App() {
   const { isAuthenticated } = useAuth();
-
-  return (
+ console.log("the testing phase");
+ 
+   return (
     <>
       <BrowserRouter>
 
