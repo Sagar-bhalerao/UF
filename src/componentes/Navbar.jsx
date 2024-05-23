@@ -58,7 +58,7 @@ const Navbar = () => {
     <>
       <div className="navbar bg-base-300 sticky top-0 w-full border-b border-base-800 z-10 ">
 
-        {/* mobile menu */}       
+        {/* mobile menu */}
         <div className="flex-none">
 
           <div className="drawer lg:hidden">
@@ -176,7 +176,7 @@ const Navbar = () => {
                 </div>
                 <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                   <li><Link onClick={closeDropdown} to="/Ledger">Ledger</Link></li>
-                  <li><a>Member</a></li>
+                  <li><Link onClick={closeDropdown} to="/MemReports">Member</Link></li>
 
                 </ul>
               </div></>) : (

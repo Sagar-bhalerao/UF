@@ -24,6 +24,7 @@ import { useAuth } from './context/AuthContext';
 import {Toaster} from "sonner";
 import Ledger from './componentes/Reports/Ledger/Ledger';
 import Profile from './componentes/Auth/Profile';
+import MemberReport from './componentes/Reports/Member/MemberReport';
 function App() {
   const { isAuthenticated } = useAuth();
  console.log("the testing phase");
@@ -58,6 +59,7 @@ function App() {
                   <Route path='/Login' element={<Login />} />
                   <Route path='/Logout' element={<Logout />} />
                   <Route path='/Ledger' element={<Ledger />} />
+                  <Route path='/MemReports' element={<MemberReport />} />
                   <Route path='/Profile' element={<Profile/>}/>
                 </Routes>
                 <Footer />
